@@ -1,0 +1,121 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*
+  THEME TOKENS
+  ------------
+  Three palettes, switched by [data-theme] on <html>. Every component uses
+  these variables, never a hard-coded color, so the whole site re-skins from
+  this block. Default is Violet (dark). Preference is saved to localStorage
+  by components/ThemeToggle.js.
+*/
+:root,
+[data-theme="violet"] {
+  --bg: #06070d;
+  --bg-soft: #0b0d18;
+  --surface: #10121f;
+  --surface-2: #161a2c;
+  --ink: #f4f5fb;
+  --muted: #9aa0b4;
+  --line: rgba(255, 255, 255, 0.09);
+  --accent: #8b5cf6;
+  --accent-2: #22d3ee;
+  --accent-ink: #ffffff;
+  --accent-soft: rgba(139, 92, 246, 0.14);
+  --gradient: linear-gradient(90deg, #8b5cf6, #22d3ee);
+}
+
+[data-theme="inferno"] {
+  --bg: #0b0503;
+  --bg-soft: #130804;
+  --surface: #170a05;
+  --surface-2: #1f0f07;
+  --ink: #fdf3ea;
+  --muted: #b99a86;
+  --line: rgba(255, 170, 120, 0.14);
+  --accent: #f97316;
+  --accent-2: #ef4444;
+  --accent-ink: #ffffff;
+  --accent-soft: rgba(249, 115, 22, 0.16);
+  --gradient: linear-gradient(90deg, #f97316, #ef4444);
+}
+
+[data-theme="frost"] {
+  --bg: #f4f7fc;
+  --bg-soft: #eaf0fa;
+  --surface: #ffffff;
+  --surface-2: #eef2fb;
+  --ink: #101828;
+  --muted: #5b6478;
+  --line: rgba(16, 24, 40, 0.1);
+  --accent: #2563eb;
+  --accent-2: #38bdf8;
+  --accent-ink: #ffffff;
+  --accent-soft: rgba(37, 99, 235, 0.1);
+  --gradient: linear-gradient(90deg, #2563eb, #38bdf8);
+}
+
+:root {
+  --radius-card: 16px;
+  /*
+    System font stacks, so the build never depends on network access to
+    Google Fonts. If you want the exact "Fraunces" display serif from the
+    reference video, add it with next/font/google in app/layout.js — see
+    README.md for the two-line change.
+  */
+  --font-sans: ui-sans-serif, system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --font-display: Georgia, Cambria, "Times New Roman", Times, serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+.gradient-text {
+  background: var(--gradient);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
+
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+/* starfield background used on hero-heavy pages */
+.starfield {
+  background-image: radial-gradient(rgba(255, 255, 255, 0.35) 1px, transparent 1px),
+    radial-gradient(rgba(255, 255, 255, 0.2) 1px, transparent 1px);
+  background-size: 140px 140px, 90px 90px;
+  background-position: 0 0, 40px 60px;
+}
+[data-theme="frost"] .starfield {
+  background-image: radial-gradient(rgba(16, 24, 40, 0.12) 1px, transparent 1px),
+    radial-gradient(rgba(16, 24, 40, 0.08) 1px, transparent 1px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}

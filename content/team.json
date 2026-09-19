@@ -1,0 +1,20 @@
+[
+  { "group": "guest", "name": "Mr. Santosh Rebello", "role": "Salesforce", "badge": "Guest of Honor", "badge2": "Keynote Speaker", "image": "/images/team/placeholder.svg" },
+  { "group": "guest", "name": "Mr. Stephen Pinto", "role": "Salesforce & SJEC Alumnus", "badge": "Technical Mentor", "badge2": "Alumni Guide", "image": "/images/team/placeholder.svg" },
+  { "group": "guest", "name": "Dr. Rio D'Souza", "role": "Principal, SJEC", "badge": "Presidential Address", "badge2": "Patron", "image": "/images/team/placeholder.svg" },
+  { "group": "guest", "name": "Dr. Melwyn D'Souza", "role": "HOD, Computer Science & Engg", "badge": "Program Chair", "badge2": "Department Head", "image": "/images/team/placeholder.svg" },
+
+  { "group": "faculty", "name": "Ms. Nisha Roche", "role": "Assistant Professor, CSE \u00b7 Faculty Coordinator", "image": "/images/team/placeholder.svg" },
+  { "group": "faculty", "name": "Mr. Keith Fernandes", "role": "Assistant Professor, CSE \u00b7 Faculty Coordinator", "badge": "Portrait View", "image": "/images/team/placeholder.svg" },
+
+  { "group": "officer", "name": "Ruben Saldanha", "role": "President", "tag": "Executive President", "body": "Guiding club vision, university collaborations, and strategic workshop series.", "image": "/images/team/placeholder.svg" },
+  { "group": "officer", "name": "Ajay Preenal Dsouza", "role": "Vice President", "tag": "Executive Vice President", "body": "Coordinating student mentorship, event operations, and community growth.", "image": "/images/team/placeholder.svg" },
+  { "group": "officer", "name": "Stevin Dsouza", "role": "Tech Lead", "tag": "Technical Direction", "body": "Technical architectures, hands-on lab environments, and repository supervision.", "image": "/images/team/placeholder.svg" },
+  { "group": "officer", "name": "Frenny Chrystal Saldanha", "role": "Resource Head", "tag": "Operations & Logistics", "body": "Managing cloud compute budgets, venue infrastructure, and participant toolkits.", "image": "/images/team/placeholder.svg" },
+  { "group": "officer", "name": "Joyline Galbao", "role": "Secretary", "tag": "Administration", "body": "Documentation, accreditation reporting, meeting minutes, and member onboarding.", "image": "/images/team/placeholder.svg" },
+  { "group": "officer", "name": "Chinthan N V", "role": "Media Head", "tag": "Creative Outreach", "body": "Brand storytelling, photo documentation, visual design, and social publications.", "image": "/images/team/placeholder.svg" },
+
+  { "group": "committee", "name": "Prajwal Royston Cordiero", "role": "Departmental Representative", "image": "/images/team/placeholder.svg" },
+  { "group": "committee", "name": "Chacko P Abraham", "role": "Departmental Representative", "image": "/images/team/placeholder.svg" },
+  { "group": "committee", "name": "Alma Roxane Pereira", "role": "Departmental Representative", "image": "/images/team/placeholder.svg" }
+]
