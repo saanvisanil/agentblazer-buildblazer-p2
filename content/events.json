@@ -1,12 +1,12 @@
 [
   {
-    "slug": "event-1",
-    "title": "ddfdkc",
-    "tag": "",
+    "slug": "master-the-future-gsoc-llms",
+    "title": "Master the Future: A Hands-on GSoC & LLMs Workshop",
+    "tag": "Flagship Masterclass",
     "date": "2026-10-06",
     "status": "upcoming",
     "registrationOpen": true,
-    "summary": "",
+    "summary": "Practical masterclass on open-source Git PR workflows, Retrieval-Augmented Generation (RAG), Gemini AI, LangChain, LlamaIndex, CrewAI, and live Gradio prototyping.",
     "details": "",
     "reportUrl": "",
     "footLeft": "Hover to inspect gallery",
@@ -108,9 +108,7 @@
     "footRight": "Cloud Computing Lab",
     "platform": "Salesforce Developer Sandbox",
     "images": [
-      "/images/events/placeholder.svg",
-      "/images/events/1790091516730-ce8c6df2-7983-4b57-9438-43b95a46c57b.jpg",
-      "/images/events/1790091524867-a3affab3-efc7-4bf8-be43-ca57b3ce18ad.jpg"
+      "/images/events/placeholder.svg"
     ],
     "registrationOpen": false
   }
