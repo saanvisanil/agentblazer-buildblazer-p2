@@ -86,7 +86,10 @@
     "footRight": "Cloud Computing Lab",
     "platform": "Salesforce Developer Sandbox",
     "images": [
-      "/images/events/placeholder.svg"
-    ]
+      "/images/events/placeholder.svg",
+      "/images/events/1790091516730-ce8c6df2-7983-4b57-9438-43b95a46c57b.jpg",
+      "/images/events/1790091524867-a3affab3-efc7-4bf8-be43-ca57b3ce18ad.jpg"
+    ],
+    "registrationOpen": false
   }
 ]
