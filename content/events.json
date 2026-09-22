@@ -1,5 +1,19 @@
 [
   {
+    "slug": "event-mucxwyco",
+    "title": "New Event-3",
+    "tag": "Workshop",
+    "date": "2026-09-25",
+    "status": "upcoming",
+    "registrationOpen": true,
+    "summary": "Brief event overview.",
+    "details": "",
+    "reportUrl": "",
+    "footLeft": "Hover to inspect gallery",
+    "footRight": "",
+    "images": []
+  },
+  {
     "slug": "master-the-future-gsoc-llms",
     "title": "Master the Future: A Hands-on GSoC & LLMs Workshop",
     "tag": "Flagship Masterclass",
@@ -73,8 +87,7 @@
     "footRight": "VI Sem CSE Cohort",
     "speaker": "Mr. Suhas Nayak · SecOps Lead, Ingersoll Rand",
     "images": [
-      "/images/events/1790092316843-828ab9e1-be00-4db7-8e7c-679ac3f219a0.jpg",
-      "/images/events/1790097624459-48e16083-01ce-428b-8500-bb0b00526264.jpg"
+      "/images/events/1790092316843-828ab9e1-be00-4db7-8e7c-679ac3f219a0.jpg"
     ],
     "registrationOpen": false
   },
