@@ -1,16 +1,16 @@
 [
   {
-    "slug": "",
+    "slug": "event-1",
     "title": "Master the Future: A Hands-on GSoC & LLMs Workshop-2",
-    "tag": "Flagship Masterclass",
-    "date": "0026-09-30",
+    "tag": "",
+    "date": "2026-10-06",
     "status": "upcoming",
     "registrationOpen": true,
     "summary": "",
     "details": "",
     "reportUrl": "",
     "footLeft": "Hover to inspect gallery",
-    "footRight": "please",
+    "footRight": "",
     "images": [
       "/images/events/placeholder.svg"
     ]
