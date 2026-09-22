@@ -29,7 +29,8 @@
     "footRight": "10 Contest Photos",
     "images": [
       "/images/events/placeholder.svg"
-    ]
+    ],
+    "registrationOpen": true
   },
   {
     "slug": "agentforce-technical-deep-dive",
