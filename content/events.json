@@ -8,8 +8,11 @@
     "summary": "Practical masterclass on open-source Git PR workflows, Retrieval-Augmented Generation (RAG), Gemini AI, LangChain, LlamaIndex, CrewAI, and live Gradio prototyping.",
     "footLeft": "Hover to inspect gallery",
     "footRight": "80 Shortlisted Students",
-    "speaker": "Anas Khan \u00b7 Google DeepMind GSoC Alumni",
-    "images": ["/images/events/placeholder.svg"]
+    "speaker": "Anas Khan · Google DeepMind GSoC Alumni",
+    "images": [
+      "/images/events/placeholder.svg"
+    ],
+    "registrationOpen": true
   },
   {
     "slug": "prompt-ops-2k26",
@@ -18,10 +21,15 @@
     "date": "2026-03-25",
     "status": "upcoming",
     "summary": "Fast-paced prompt engineering hackathon featuring automated test suites, iterative refinement, teamwork, and live algorithmic problem solving.",
-    "tracks": ["Track 1: 1st Year Engineers", "Track 2: 2nd Year Engineers"],
+    "tracks": [
+      "Track 1: 1st Year Engineers",
+      "Track 2: 2nd Year Engineers"
+    ],
     "footLeft": "Hover to inspect gallery",
     "footRight": "10 Contest Photos",
-    "images": ["/images/events/placeholder.svg"]
+    "images": [
+      "/images/events/placeholder.svg"
+    ]
   },
   {
     "slug": "agentforce-technical-deep-dive",
@@ -32,8 +40,10 @@
     "summary": "Guiding undergraduate engineers from prompt prediction to autonomous agentic architectures, Salesforce Data Cloud integration, and real-time enterprise workflows.",
     "footLeft": "Inaugural Technical Session",
     "footRight": "CSE Auditorium",
-    "speaker": "Mr. Suhas Nayak \u00b7 SecOps Lead, Ingersoll Rand",
-    "images": ["/images/events/placeholder.svg"]
+    "speaker": "Mr. Suhas Nayak · SecOps Lead, Ingersoll Rand",
+    "images": [
+      "/images/events/placeholder.svg"
+    ]
   },
   {
     "slug": "demystifying-generative-models",
@@ -45,7 +55,9 @@
     "footLeft": "Hands-on Code Walkthrough",
     "footRight": "Systems Lab",
     "speakerNote": "Session Leads: Prajwal Royston Cordiero & Chacko P Abraham",
-    "images": ["/images/events/placeholder.svg"]
+    "images": [
+      "/images/events/placeholder.svg"
+    ]
   },
   {
     "slug": "cyber-security-career-pathways",
@@ -56,8 +68,10 @@
     "summary": "Interactive demonstrations covering Shodan discovery, OSINT methods, CVE vulnerability analysis, SQL injection scenarios, and the Cyber Kill Chain.",
     "footLeft": "Hover to inspect gallery",
     "footRight": "VI Sem CSE Cohort",
-    "speaker": "Mr. Suhas Nayak \u00b7 SecOps Lead, Ingersoll Rand",
-    "images": ["/images/events/placeholder.svg"]
+    "speaker": "Mr. Suhas Nayak · SecOps Lead, Ingersoll Rand",
+    "images": [
+      "/images/events/placeholder.svg"
+    ]
   },
   {
     "slug": "hands-on-agentforce-ai-agents",
@@ -69,6 +83,8 @@
     "footLeft": "Guided Practical Exercises",
     "footRight": "Cloud Computing Lab",
     "platform": "Salesforce Developer Sandbox",
-    "images": ["/images/events/placeholder.svg"]
+    "images": [
+      "/images/events/placeholder.svg"
+    ]
   }
 ]
