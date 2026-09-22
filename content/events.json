@@ -11,7 +11,12 @@
     "reportUrl": "",
     "footLeft": "Hover to inspect gallery",
     "footRight": "",
-    "images": []
+    "images": [
+      "/images/events/1790092442494-14b40969-bcba-477b-9be3-83d88a01768e.jpg",
+      "/images/events/1790092449178-1d6b99e7-b7bd-452c-88c5-55077db3d4ee.jpg",
+      "/images/events/1790092452664-d3f6a09f-7a4f-4b25-ba71-539ce01af0fc.jpg",
+      "/images/events/1790092457324-09f17729-c361-4681-99c2-9e4cb4edb5f1.jpg"
+    ]
   },
   {
     "slug": "master-the-future-gsoc-llms",
