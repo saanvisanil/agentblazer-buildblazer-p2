@@ -1,8 +1,8 @@
 [
   {
     "slug": "",
-    "title": "ddddd",
-    "tag": "kkl",
+    "title": "Master the Future: A Hands-on GSoC & LLMs Workshop-2",
+    "tag": "Flagship Masterclass",
     "date": "0026-09-30",
     "status": "upcoming",
     "registrationOpen": true,
@@ -19,7 +19,7 @@
     "slug": "master-the-future-gsoc-llms",
     "title": "Master the Future: A Hands-on GSoC & LLMs Workshop",
     "tag": "Flagship Masterclass",
-    "date": "2026-02-14",
+    "date": "2026-12-14",
     "status": "upcoming",
     "summary": "Practical masterclass on open-source Git PR workflows, Retrieval-Augmented Generation (RAG), Gemini AI, LangChain, LlamaIndex, CrewAI, and live Gradio prototyping.",
     "footLeft": "Hover to inspect gallery",
