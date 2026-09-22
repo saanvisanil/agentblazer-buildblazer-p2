@@ -57,12 +57,7 @@ export default function JoinPage() {
           <p className="font-display font-semibold">{site.department}</p>
           <p className="mt-1 text-sm text-muted">{site.address.line2}</p>
           <p className="text-sm text-muted">{site.address.line3}</p>
-          <p className="mt-3 text-sm">
-            Direct inquiries:{" "}
-            <a href={`mailto:${site.email}`} className="text-accent hover:underline">
-              {site.email}
-            </a>
-          </p>
+          <p className="mt-3 text-sm text-muted">For direct inquiries, reach out at <a href={`mailto:${site.email}`} className="text-accent hover:underline font-medium">{site.email}</a>.</p>
         </div>
       </section>
     </>

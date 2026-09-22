@@ -58,14 +58,8 @@
 
 :root {
   --radius-card: 16px;
-  /*
-    System font stacks, so the build never depends on network access to
-    Google Fonts. If you want the exact "Fraunces" display serif from the
-    reference video, add it with next/font/google in app/layout.js — see
-    README.md for the two-line change.
-  */
-  --font-sans: ui-sans-serif, system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-  --font-display: Georgia, Cambria, "Times New Roman", Times, serif;
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --font-display: var(--font-inter), ui-sans-serif, system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }
 
 html {
@@ -85,6 +79,8 @@ body {
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
+  display: inline-block;
+  padding-right: 0.06em;
 }
 
 .font-display {
@@ -117,5 +113,168 @@ body {
   *::after {
     animation-duration: 0.01ms !important;
     transition-duration: 0.01ms !important;
+  }
+}
+
+/* Home-page opening video. */
+.intro-sequence {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  overflow: hidden;
+  display: grid;
+  place-items: center;
+  background: #000;
+  transition: opacity .65s ease, visibility .65s ease;
+}
+.intro-sequence--leaving { opacity: 0; visibility: hidden; pointer-events: none; }
+.intro-sequence__video { width: 100%; height: 100%; object-fit: cover; user-select: none; }
+.intro-sequence__skip { position: absolute; inset: 0; border: 0; background: transparent; cursor: pointer; }
+@media (min-width: 768px) {
+  html,
+  body {
+    cursor: none;
+  }
+
+  a,
+  button,
+  input,
+  textarea,
+  select,
+  [role="button"] {
+    cursor: none;
+  }
+}
+/* =========================================
+   AGENTBLAZER LOGO ANIMATIONS
+   ========================================= */
+
+@keyframes agentblazer-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes agentblazer-spin-reverse {
+  from {
+    transform: rotate(360deg);
+  }
+
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes agentblazer-pulse {
+  0%,
+  100% {
+    opacity: 0.55;
+    transform: scale(0.98);
+  }
+
+  50% {
+    opacity: 1;
+    transform: scale(1.03);
+  }
+}
+
+@keyframes agentblazer-sweep {
+  0% {
+    background-position: 200% 0;
+  }
+
+  45%,
+  100% {
+    background-position: -100% 0;
+  }
+}
+/* =========================================
+   AGENTBLAZER HERO CORE
+   ========================================= */
+
+@keyframes hero-core-pulse {
+  0%,
+  100% {
+    transform: scale(0.94);
+    opacity: 0.55;
+  }
+
+  50% {
+    transform: scale(1.08);
+    opacity: 0.9;
+  }
+}
+
+@keyframes hero-ring-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes hero-ring-reverse {
+  from {
+    transform: rotate(360deg);
+  }
+
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes hero-logo-float {
+  0%,
+  100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+
+  50% {
+    transform: translateY(-10px) rotate(1deg);
+  }
+}
+
+@keyframes hero-particle-one {
+  0%,
+  100% {
+    transform: translate(0, 0);
+    opacity: 0.4;
+  }
+
+  50% {
+    transform: translate(20px, -25px);
+    opacity: 1;
+  }
+}
+
+@keyframes hero-particle-two {
+  0%,
+  100% {
+    transform: translate(0, 0);
+    opacity: 0.3;
+  }
+
+  50% {
+    transform: translate(-18px, 22px);
+    opacity: 1;
+  }
+}
+
+@keyframes hero-particle-three {
+  0%,
+  100% {
+    transform: translate(0, 0);
+    opacity: 0.35;
+  }
+
+  50% {
+    transform: translate(15px, -18px);
+    opacity: 1;
   }
 }

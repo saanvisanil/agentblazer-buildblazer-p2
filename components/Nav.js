@@ -21,9 +21,6 @@ export default function Nav({ site }) {
           <span className="leading-tight">
             <span className="block font-display text-base font-semibold tracking-tight">
               {site.shortName}
-              <span className="ml-1.5 text-xs font-normal italic text-muted">
-                {site.collective}
-              </span>
             </span>
             <span className="block text-[11px] text-muted">{site.department}</span>
           </span>

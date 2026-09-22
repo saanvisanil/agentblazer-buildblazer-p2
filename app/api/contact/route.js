@@ -12,6 +12,7 @@
 // admin panel's Applications tab has a permanent list even if an email
 // bounces or gets missed.
 import { readJsonFile, writeJsonFile } from "@/lib/github";
+import { createRateLimiter } from "@/lib/rateLimit";
 
 const MAX = { name: 80, email: 120, message: 1000 };
 const EMAIL = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
@@ -30,13 +31,25 @@ function clean(value, max) {
 // whenever the serverless function cold-starts, which is an acceptable
 // trade-off for a club application form.
 const hits = new Map();
+const RATE_WINDOW_MS = 10 * 60 * 1000;
+const RATE_MAX = 5;
+let lastCleanup = Date.now();
+
 function rateLimited(ip) {
   const now = Date.now();
-  const windowMs = 10 * 60 * 1000;
-  const recent = (hits.get(ip) || []).filter((t) => now - t < windowMs);
+  // Periodic cleanup to prevent memory leak in long-lived serverless instances
+  if (now - lastCleanup > RATE_WINDOW_MS) {
+    for (const [key, timestamps] of hits) {
+      const fresh = timestamps.filter((t) => now - t < RATE_WINDOW_MS);
+      if (fresh.length === 0) hits.delete(key);
+      else hits.set(key, fresh);
+    }
+    lastCleanup = now;
+  }
+  const recent = (hits.get(ip) || []).filter((t) => now - t < RATE_WINDOW_MS);
   recent.push(now);
   hits.set(ip, recent);
-  return recent.length > 5;
+  return recent.length > RATE_MAX;
 }
 
 async function sendEmail(submission) {

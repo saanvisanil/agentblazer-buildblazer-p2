@@ -1,9 +1,7 @@
 {
   "name": "AgentBlazer Club",
   "shortName": "AgentBlazer",
-  "collective": "collective",
   "tagline": "Pioneering Autonomous & Agentic AI Systems",
-  "eyebrow": "Collegiate AI Initiative \u2022 St Joseph Engineering College",
   "description": "A dedicated student-led laboratory shaping tomorrow's software engineers through autonomous agent architectures, open-source AI tooling, collaborative workshops, and premier Salesforce Trailblazer community synergy.",
   "department": "Department of Computer Science & Engineering",
   "college": "St Joseph Engineering College, Mangaluru",
@@ -30,7 +28,6 @@
     { "label": "Events & Workshops", "href": "/events" },
     { "label": "Join & Connect", "href": "/join" }
   ],
-  "affiliations": ["SJEC CSE", "Agentforce", "Trailblazer"],
   "quickLinks": [
     { "label": "About & Charter", "href": "/about" },
     { "label": "Workshops & Contests", "href": "/events" },

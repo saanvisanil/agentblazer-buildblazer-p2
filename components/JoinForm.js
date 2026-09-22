@@ -96,7 +96,7 @@ export default function JoinForm() {
 
       <div>
         <Button type="submit" disabled={status === "sending"}>
-          {status === "sending" ? "Sending\u2026" : "Send application"}
+          {status === "sending" ? "Sending…" : "Send application"}
         </Button>
       </div>
     </form>

@@ -3,9 +3,9 @@
 import useResource from "./useResource";
 
 export default function SiteEditor() {
-  const { data, setData, status, error, save } = useResource("site");
+  const { data, setData, status, error, dirty, save } = useResource("site");
 
-  if (!data) return <p className="text-sm text-muted">Loading site text\u2026</p>;
+  if (!data) return <p className="text-sm text-muted">Loading site text…</p>;
 
   const inputClass = "mt-1 w-full rounded-card border border-line bg-bg px-3 py-2 text-sm";
 
@@ -56,13 +56,14 @@ export default function SiteEditor() {
       <div className="flex items-center gap-3">
         <button
           onClick={() => save(data)}
-          disabled={status === "saving"}
-          className="rounded-card px-4 py-2 text-sm font-medium text-accent-ink"
+          disabled={status === "saving" || !dirty}
+          className="rounded-card px-4 py-2 text-sm font-medium text-accent-ink disabled:cursor-not-allowed disabled:opacity-60"
           style={{ background: "var(--gradient)" }}
         >
-          {status === "saving" ? "Saving\u2026" : "Save changes"}
+          {status === "saving" ? "Saving…" : "Save changes"}
         </button>
-        {status === "saved" ? <span className="text-sm text-accent">Saved \u2014 site will update shortly.</span> : null}
+        {dirty ? <span className="text-sm text-muted">Unsaved changes</span> : null}
+        {status === "saved" ? <span className="text-sm text-accent">Saved — site will update shortly.</span> : null}
         {error ? <span className="text-sm text-accent">{error}</span> : null}
       </div>
     </div>

@@ -1,16 +1,18 @@
 import Eyebrow from "@/components/Eyebrow";
 import GalleryCard from "@/components/GalleryCard";
-import { getSite, getEvents, formatDate } from "@/lib/content";
+import { getSite, getLiveEvents, formatDate } from "@/lib/content";
 
 export const metadata = {
   title: "Events & Workshops",
   description: "Workshops, contests and masterclasses run by the AgentBlazer Club.",
 };
 
-export default function EventsPage() {
+export const dynamic = "force-dynamic";
+
+export default async function EventsPage() {
   const site = getSite();
   const config = site.events;
-  const events = getEvents();
+  const events = await getLiveEvents();
 
   return (
     <>

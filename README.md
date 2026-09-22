@@ -62,6 +62,7 @@ deploying — `.env.local` itself is git-ignored and never gets pushed.
 
 | Variable | Required for | Notes |
 |---|---|---|
+| `ADMIN_USERNAME` | `/admin` login | Bootstrap leader username; defaults to `leader` if omitted |
 | `ADMIN_PASSWORD` | `/admin` login | Any password your team agrees on |
 | `SESSION_SECRET` | `/admin` login | Generate with `node -e "console.log(require('crypto').randomBytes(32).toString('hex'))"` |
 | `GITHUB_TOKEN` | `/admin` saving, application logging | Fine-grained token, scoped to this one repo only, "Contents: Read and write" permission. Create at github.com/settings/tokens?type=beta |

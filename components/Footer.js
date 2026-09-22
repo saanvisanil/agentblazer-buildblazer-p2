@@ -3,7 +3,7 @@ import Logo from "./Logo";
 export default function Footer({ site }) {
   return (
     <footer className="starfield border-t border-line bg-bg-soft">
-      <div className="mx-auto grid w-full max-w-6xl gap-10 px-5 py-14 sm:grid-cols-3">
+      <div className="mx-auto grid w-full max-w-6xl gap-10 px-5 py-14 sm:grid-cols-2">
         <div>
           <div className="flex items-center gap-3">
             <Logo size={32} />
@@ -28,22 +28,6 @@ export default function Footer({ site }) {
           </ul>
         </div>
 
-        <div>
-          <p className="text-xs font-semibold uppercase tracking-wider text-muted">Affiliations</p>
-          <div className="mt-3 flex flex-wrap gap-2">
-            {site.affiliations.map((a) => (
-              <span
-                key={a}
-                className="rounded-full border border-line bg-surface px-3 py-1 text-xs text-muted"
-              >
-                {a}
-              </span>
-            ))}
-          </div>
-          <p className="mt-4 text-sm text-muted">
-            Empowered by faculty guidance and student leadership.
-          </p>
-        </div>
       </div>
 
       <div className="border-t border-line">

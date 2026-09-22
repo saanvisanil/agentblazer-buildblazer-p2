@@ -1,11 +1,11 @@
 import { NextResponse } from "next/server";
-import { isAuthorized } from "@/lib/session";
+import { canAccessResource, isAuthorized } from "@/lib/session";
 import { readJsonFile } from "@/lib/github";
 
 // Lists everyone who has applied through the Join & Connect form. The list
 // itself lives in content/applications.json, appended to by app/api/contact.
 export async function GET(request) {
-  if (!isAuthorized(request)) {
+  if (!isAuthorized(request) || !canAccessResource(request, "applications")) {
     return NextResponse.json({ error: "Not signed in." }, { status: 401 });
   }
   try {
