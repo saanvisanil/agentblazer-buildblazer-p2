@@ -1,21 +1,5 @@
 [
   {
-    "slug": "event-1",
-    "title": "Master the Future: A Hands-on GSoC & LLMs Workshop-2",
-    "tag": "",
-    "date": "2026-10-06",
-    "status": "upcoming",
-    "registrationOpen": true,
-    "summary": "",
-    "details": "",
-    "reportUrl": "",
-    "footLeft": "Hover to inspect gallery",
-    "footRight": "",
-    "images": [
-      "/images/events/placeholder.svg"
-    ]
-  },
-  {
     "slug": "master-the-future-gsoc-llms",
     "title": "Master the Future: A Hands-on GSoC & LLMs Workshop",
     "tag": "Flagship Masterclass",
@@ -87,8 +71,7 @@
     "footRight": "VI Sem CSE Cohort",
     "speaker": "Mr. Suhas Nayak · SecOps Lead, Ingersoll Rand",
     "images": [
-      "/images/events/placeholder.svg",
-      "/images/events/1790089205541-514393b5-41b5-441f-a743-08df596d357e.jpg"
+      "/images/events/1790091464959-5f8186a8-d50e-4a9c-88bf-d37fb2d88c9c.jpg"
     ],
     "registrationOpen": false
   },
