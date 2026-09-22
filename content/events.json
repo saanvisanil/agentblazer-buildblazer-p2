@@ -1,23 +1,9 @@
 [
   {
-    "slug": "event-mucxwyco",
-    "title": "New Event-3",
-    "tag": "Workshop",
-    "date": "2026-09-25",
-    "status": "upcoming",
-    "registrationOpen": true,
-    "summary": "Brief event overview.",
-    "details": "",
-    "reportUrl": "",
-    "footLeft": "Hover to inspect gallery",
-    "footRight": "",
-    "images": []
-  },
-  {
     "slug": "master-the-future-gsoc-llms",
     "title": "Master the Future: A Hands-on GSoC & LLMs Workshop",
     "tag": "Flagship Masterclass",
-    "date": "2026-12-14",
+    "date": "2026-02-14",
     "status": "upcoming",
     "summary": "Practical masterclass on open-source Git PR workflows, Retrieval-Augmented Generation (RAG), Gemini AI, LangChain, LlamaIndex, CrewAI, and live Gradio prototyping.",
     "footLeft": "Hover to inspect gallery",
@@ -26,7 +12,7 @@
     "images": [
       "/images/events/placeholder.svg"
     ],
-    "registrationOpen": true
+    "registrationOpen": false
   },
   {
     "slug": "prompt-ops-2k26",
@@ -44,7 +30,7 @@
     "images": [
       "/images/events/placeholder.svg"
     ],
-    "registrationOpen": true
+    "registrationOpen": false
   },
   {
     "slug": "agentforce-technical-deep-dive",
