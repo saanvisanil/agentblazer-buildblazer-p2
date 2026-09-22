@@ -3,22 +3,6 @@
     "slug": "master-the-future-gsoc-llms",
     "title": "Master the Future: A Hands-on GSoC & LLMs Workshop",
     "tag": "Flagship Masterclass",
-    "date": "2026-10-06",
-    "status": "upcoming",
-    "registrationOpen": true,
-    "summary": "Practical masterclass on open-source Git PR workflows, Retrieval-Augmented Generation (RAG), Gemini AI, LangChain, LlamaIndex, CrewAI, and live Gradio prototyping.",
-    "details": "",
-    "reportUrl": "",
-    "footLeft": "Hover to inspect gallery",
-    "footRight": "",
-    "images": [
-      "/images/events/1790092457324-09f17729-c361-4681-99c2-9e4cb4edb5f1.jpg"
-    ]
-  },
-  {
-    "slug": "master-the-future-gsoc-llms",
-    "title": "Master the Future: A Hands-on GSoC & LLMs Workshop",
-    "tag": "Flagship Masterclass",
     "date": "2026-12-14",
     "status": "upcoming",
     "summary": "Practical masterclass on open-source Git PR workflows, Retrieval-Augmented Generation (RAG), Gemini AI, LangChain, LlamaIndex, CrewAI, and live Gradio prototyping.",
@@ -89,7 +73,8 @@
     "footRight": "VI Sem CSE Cohort",
     "speaker": "Mr. Suhas Nayak · SecOps Lead, Ingersoll Rand",
     "images": [
-      "/images/events/1790092316843-828ab9e1-be00-4db7-8e7c-679ac3f219a0.jpg"
+      "/images/events/1790092316843-828ab9e1-be00-4db7-8e7c-679ac3f219a0.jpg",
+      "/images/events/1790097624459-48e16083-01ce-428b-8500-bb0b00526264.jpg"
     ],
     "registrationOpen": false
   },
