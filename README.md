@@ -8,12 +8,27 @@ Live implementation of the **AgentBlazer Club** official website for the Build B
 
 ## 👥 Team Information
 
-| Role | Name / Details |
+| Field | Details |
 |---|---|
+| **Team Name** | **MOON** |
+| **Team Lead** | **Sakshi Sandeep Talekar** |
+| **Team Members** | **Saanvi V Sanil**, **Prathiksha R** |
 | **Repository Fork** | `saanvisanil/agentblazer-buildblazer-p2` |
 | **Institution** | St Joseph Engineering College (SJEC), Mangaluru |
 | **Department** | Department of Computer Science & Engineering |
 | **Academic Track** | AgentBlazer Build Blazer Track (Academic Year 2025-2026) |
+
+---
+
+## 🗝️ Admin Panel Credentials (For Competition Evaluation)
+
+To test the live no-code Admin Panel at **[https://agentblazer-buildblazer-p2.vercel.app/admin](https://agentblazer-buildblazer-p2.vercel.app/admin)**:
+
+- **Admin Login URL**: `/admin`
+- **Username**: `leader`
+- **Password**: `Saanvi123`
+
+*(Configured securely via environment variables `ADMIN_USERNAME` and `ADMIN_PASSWORD`)*
 
 ---
 
