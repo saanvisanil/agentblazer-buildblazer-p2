@@ -16,7 +16,8 @@
       "/images/events/1790176879441-1d6e50c8-c221-46aa-98bf-570c268debe5.jpg",
       "/images/events/1790176883372-307fb64e-acfa-43e0-9271-14fdf27ed47f.jpg"
     ],
-    "registrationOpen": false
+    "registrationOpen": false,
+    "details": " Organized by the Department of CSE in association with the AgentBlazer Club, this workshop was conducted by Mr. Anas Khan (Software Development Engineer at HackerRank) for approximately 55 participants. The hands-on session provided practical GitHub workflow training (forking, cloning, pull requests), guidance on Google Summer of Code (GSOC) participation, and an overview of the AI ecosystem. Key technical topics covered included LLM parameters (Temperature, Top-P, Max Tokens), prompt strategies, Retrieval Augmented Generation (RAG), function calling, Gemini AI, and development frameworks such as LangChain, LlamaIndex, CrewAI, Gradio, and Streamlit. The session opened with a welcome by Club VP Mr. Ajay D'Souza and concluded with a token of appreciation presented by Faculty Coordinator Ms. Nisha J Roche, along with a vote of thanks by Student President Mr. Ruben Saldanha and support from HOD Dr. Melwyn D’Souza.\n"
   },
   {
     "slug": "prompt-ops-2k26",
