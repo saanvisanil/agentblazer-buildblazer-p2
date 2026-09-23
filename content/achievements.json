@@ -1,5 +1,11 @@
 [
   {
+    "date": "2026-02-14",
+    "title": "Master the Future: A Hands-on GSoC & LLMs Workshop",
+    "body": "",
+    "tag": "Achievement"
+  },
+  {
     "date": "2025-08-28",
     "title": "Agentforce Technical Deep-Dive",
     "body": "Guiding undergraduate engineers from prompt prediction to autonomous agentic architectures, Salesforce Data Cloud integration, and real-time enterprise workflows.",
