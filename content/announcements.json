@@ -1,15 +1,5 @@
 [
   {
-    "id": "prompt-ops-open",
-    "label": "REGISTRATION OPEN",
-    "title": "PROMPT OPS-2K26 Challenge",
-    "message": "Registrations are now open for the fast-paced algorithmic prompt engineering contest.",
-    "link": "/events/prompt-ops-2k26",
-    "startDate": "2026-09-01",
-    "endDate": "2026-11-25",
-    "active": true
-  },
-  {
     "id": "welcome-2026",
     "label": "CLUB ANNOUNCEMENT",
     "title": "Welcome to AgentBlazer",
