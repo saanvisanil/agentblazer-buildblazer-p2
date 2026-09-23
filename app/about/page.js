@@ -1,20 +1,20 @@
 import Eyebrow from "@/components/Eyebrow";
 import TeamCard from "@/components/TeamCard";
-import { formatDate, getLiveAchievements, getSite, getLiveTeam } from "@/lib/content";
+import { getSite, getLiveTeam } from "@/lib/content";
 export const metadata = {
   title: "About Us",
   description: "How the AgentBlazer Club started, its leadership, and its student core team.",
 };
 export const dynamic = "force-dynamic";
 
-export default async function AboutPage() {  const site = getSite();
+export default async function AboutPage() {
+  const site = getSite();
   const about = site.about;
- const team = await getLiveTeam();
- const guests = team.filter((member) => member.group === "guest");
-const faculty = team.filter((member) => member.group === "faculty");
-const officers = team.filter((member) => member.group === "officer");
- const committee = team.filter((member) => member.group === "committee");
- const achievements = await getLiveAchievements();
+  const team = await getLiveTeam();
+  const guests = team.filter((member) => member.group === "guest");
+  const faculty = team.filter((member) => member.group === "faculty");
+  const officers = team.filter((member) => member.group === "officer");
+  const committee = team.filter((member) => member.group === "committee");
   return (
     <>
       <section className="mx-auto w-full max-w-6xl px-5 py-14">
@@ -49,20 +49,7 @@ const officers = team.filter((member) => member.group === "officer");
         </div>
       </section>
 
-      <section className="mx-auto w-full max-w-6xl px-5 py-8">
-        <p className="text-xs font-semibold uppercase tracking-wider text-accent">Our progress</p>
-        <h2 className="mt-2 font-display text-2xl font-semibold">Achievements & timeline</h2>
-        <div className="mt-6 border-l border-line pl-5">
-          {achievements.map((achievement) => (
-            <article key={`${achievement.date}-${achievement.title}`} className="relative pb-7 last:pb-0">
-              <span className="absolute -left-[1.7rem] top-1 h-3 w-3 rounded-full bg-accent ring-4 ring-bg" />
-              <p className="text-xs text-accent">{formatDate(achievement.date)} · {achievement.tag}</p>
-              <h3 className="mt-1 font-display text-lg font-semibold">{achievement.title}</h3>
-              <p className="mt-1 max-w-2xl text-sm text-muted">{achievement.body}</p>
-            </article>
-          ))}
-        </div>
-      </section>
+
 
       <section className="mx-auto w-full max-w-6xl px-5 py-8">
         <h2 className="font-display text-2xl font-semibold">
