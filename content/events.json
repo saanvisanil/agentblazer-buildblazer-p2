@@ -55,10 +55,7 @@
     "footLeft": "Inaugural Technical Session",
     "footRight": "CSE Auditorium",
     "speaker": "Mr. Suhas Nayak · SecOps Lead, Ingersoll Rand",
-    "images": [
-      "/images/events/1790096991812-d1a0bfc8-28a1-4cfd-94fc-4bdb869b9ede.jpg",
-      "/images/events/1790096993751-28d35d1c-5ebd-43f5-80ea-6764e9b2171c.jpg"
-    ],
+    "images": [],
     "registrationOpen": false
   },
   {
@@ -86,7 +83,13 @@
     "footRight": "VI Sem CSE Cohort",
     "speaker": "Mr. Suhas Nayak · SecOps Lead, Ingersoll Rand",
     "images": [
-      "/images/events/1790092316843-828ab9e1-be00-4db7-8e7c-679ac3f219a0.jpg"
+      "/images/events/1790092316843-828ab9e1-be00-4db7-8e7c-679ac3f219a0.jpg",
+      "/images/events/1790177485174-e81d25df-602f-493d-8c8d-24613b92e835.jpg",
+      "/images/events/1790177490049-6d61b299-9722-4b74-8816-2a6adab26b9e.jpg",
+      "/images/events/1790177493378-04482604-c167-469e-b160-464d89c6b4b7.jpg",
+      "/images/events/1790177497759-90f15279-da49-4829-9671-e6a5292356e9.jpg",
+      "/images/events/1790177502783-c2641712-38ac-42e3-a4a8-2008a3630a01.jpg",
+      "/images/events/1790177506226-d6aa6915-296b-486a-8876-5a1d179cf59b.jpg"
     ],
     "registrationOpen": false
   },
