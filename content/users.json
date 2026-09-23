@@ -17,5 +17,17 @@
     "enabled": true,
     "passwordHash": "340d60211dc9c220196968da3da0ecb1:11479932bd217f5a765d47cb86923613cb0758e8f8abbcaa20f091512b7ce1b6d2193b7bed9b8102afa78f2da412c535b8906e5487e2b4560de83b55e12ca260",
     "createdAt": "2026-09-22T13:32:23.523Z"
+  },
+  {
+    "username": "eventcoordinator",
+    "role": "custom",
+    "permissions": [
+      "events",
+      "announcements",
+      "applications"
+    ],
+    "enabled": true,
+    "passwordHash": "85d14756027cef1b1e7d63c2aa8453a2:763144b5da630ce7aff5d172ffc2bf4c4dece441dbfc3b0d954ea95b27165bba54ae675ada9bdfba50341b71f396bb06c7ecf84a06084e466ef761d2e4da40f3",
+    "createdAt": "2026-09-23T17:26:13.802Z"
   }
 ]
