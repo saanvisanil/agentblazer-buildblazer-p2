@@ -6,34 +6,80 @@
   "department": "Department of Computer Science & Engineering",
   "college": "St Joseph Engineering College, Mangaluru",
   "url": "https://agentblazer.vercel.app",
-  "email": "agentblazer@sjec.ac.in",
+  "email": "24g61.sakshi@sjec.ac.in",
   "address": {
     "line1": "Department of Computer Science & Engineering",
     "line2": "St Joseph Engineering College, Vamanjoor",
-    "line3": "Mangaluru, Karnataka \u2013 575028, India"
+    "line3": "Mangaluru, Karnataka – 575028, India"
   },
   "stats": [
-    { "value": "8+", "label": "Workshops & Challenges" },
-    { "value": "500+", "label": "Engineering Students Reached" },
-    { "value": "Salesforce", "label": "Community Partner", "tag": "Active Trailblazer Mentorship" }
+    {
+      "value": "8+",
+      "label": "Workshops & Challenges"
+    },
+    {
+      "value": "500+",
+      "label": "Engineering Students Reached"
+    },
+    {
+      "value": "Salesforce",
+      "label": "Community Partner",
+      "tag": "Active Trailblazer Mentorship"
+    }
   ],
   "social": [
-    { "label": "Instagram", "href": "https://instagram.com/" },
-    { "label": "LinkedIn", "href": "https://linkedin.com/" },
-    { "label": "GitHub", "href": "https://github.com/AgentBlazer" }
+    {
+      "label": "Instagram",
+      "href": "https://instagram.com/"
+    },
+    {
+      "label": "LinkedIn",
+      "href": "https://linkedin.com/"
+    },
+    {
+      "label": "GitHub",
+      "href": "https://github.com/AgentBlazer"
+    }
   ],
   "nav": [
-    { "label": "Home", "href": "/" },
-    { "label": "About Us", "href": "/about" },
-    { "label": "Events & Workshops", "href": "/events" },
-    { "label": "Timeline", "href": "/achievements" },
-    { "label": "Join & Connect", "href": "/join" }
+    {
+      "label": "Home",
+      "href": "/"
+    },
+    {
+      "label": "About Us",
+      "href": "/about"
+    },
+    {
+      "label": "Events & Workshops",
+      "href": "/events"
+    },
+    {
+      "label": "Timeline",
+      "href": "/achievements"
+    },
+    {
+      "label": "Join & Connect",
+      "href": "/join"
+    }
   ],
   "quickLinks": [
-    { "label": "About & Charter", "href": "/about" },
-    { "label": "Workshops & Contests", "href": "/events" },
-    { "label": "Salesforce Trailhead Community", "href": "https://trailhead.salesforce.com/" },
-    { "label": "SJEC Official Website", "href": "https://sjec.ac.in/" }
+    {
+      "label": "About & Charter",
+      "href": "/about"
+    },
+    {
+      "label": "Workshops & Contests",
+      "href": "/events"
+    },
+    {
+      "label": "Salesforce Trailhead Community",
+      "href": "https://trailhead.salesforce.com/"
+    },
+    {
+      "label": "SJEC Official Website",
+      "href": "https://sjec.ac.in/"
+    }
   ],
   "about": {
     "eyebrow": "Foundations & Leadership",
@@ -46,17 +92,20 @@
       "titleEmphasis": "Agentforce Symposium",
       "body": "The Department of Computer Science & Engineering founded the AgentBlazer Club to build an authentic student collective centered on autonomous intelligence, open agent frameworks, and industry partnership.",
       "date": "August 25, 2025",
-      "meta": ["Academic Year 2025-2026", "SJEC Campus"]
+      "meta": [
+        "Academic Year 2025-2026",
+        "SJEC Campus"
+      ]
     }
   },
   "join": {
-    "eyebrow": "Membership Intake \u2022 Academic Year 2025-2026",
+    "eyebrow": "Membership Intake • Academic Year 2025-2026",
     "title": "Ready to Build with Autonomous Intelligence?",
     "titleEmphasis": "Autonomous Intelligence?",
     "body": "Join the AgentBlazer Club at SJEC CSE. Collaborate with peers, gain hands-on access to Salesforce Trailhead developer orgs, and shape real AI agent projects."
   },
   "events": {
-    "eyebrow": "Workshops & Live Sessions \u2022 Academic Year 2025-2026",
+    "eyebrow": "Workshops & Live Sessions • Academic Year 2025-2026",
     "title": "Workshops, Contests & Masterclasses",
     "titleEmphasis": "& Masterclasses",
     "lead": "Hands-on technical deep dives, algorithmic challenges, and real-world system deployments with seasoned engineers.",
@@ -65,9 +114,18 @@
       "title": "Program Outcomes Mapping",
       "lead": "Alignment with college engineering competencies.",
       "items": [
-        { "tag": "PO4 & PO5 \u2022 Modern Tool Usage", "body": "Complex algorithmic problem analysis with modern toolkits (Groq, Agentforce)." },
-        { "tag": "PO6 & PO7 \u2022 Societal Context", "body": "Ethical implications and responsible deployment of LLM and SecOps frameworks." },
-        { "tag": "PO8 & PO11 \u2022 Ethics & Project Management", "body": "Collaborative team execution, code hygiene, and competitive event governance." }
+        {
+          "tag": "PO4 & PO5 • Modern Tool Usage",
+          "body": "Complex algorithmic problem analysis with modern toolkits (Groq, Agentforce)."
+        },
+        {
+          "tag": "PO6 & PO7 • Societal Context",
+          "body": "Ethical implications and responsible deployment of LLM and SecOps frameworks."
+        },
+        {
+          "tag": "PO8 & PO11 • Ethics & Project Management",
+          "body": "Collaborative team execution, code hygiene, and competitive event governance."
+        }
       ]
     }
   }
