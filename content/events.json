@@ -69,9 +69,7 @@
     "footLeft": "Hands-on Code Walkthrough",
     "footRight": "Systems Lab",
     "speakerNote": "Session Leads: Prajwal Royston Cordiero & Chacko P Abraham",
-    "images": [
-      "/images/events/placeholder.svg"
-    ],
+    "images": [],
     "details": "Under the guidance of Ms. Nisha J. Roche, 6th-semester CSE students Prajwal Royston Corderio and Chacko P Abraham led a hands-on peer-learning workshop on Generative AI (mapped to PO4, PO6, PO7, PO11). The session detailed AI governance frameworks (LLM Council), transformer mechanisms, and prompt engineering, alongside comparisons of LLaMA, Groq, Mistral AI, ChatGPT, GitHub Copilot, and Perplexity. Students engaged in an AI quiz, a three-stage model evaluation challenge, and a feature-modification coding task before a valedictory session to end the program.",
     "registrationOpen": false
   },
@@ -104,9 +102,7 @@
     "footLeft": "Guided Practical Exercises",
     "footRight": "Cloud Computing Lab",
     "platform": "Salesforce Developer Sandbox",
-    "images": [
-      "/images/events/placeholder.svg"
-    ],
+    "images": [],
     "registrationOpen": false,
     "details": "The AgentBlazer Club, in collaboration with Salesforce, organized a hands-on technical workshop focused on building AI agents and prompt-based workflow automation using the Salesforce Trailhead environment. Students gained practical experience in designing Sales Email Prompt Templates, Flex Prompt Templates, and configuring automated prompt flows to build reusable AI structures. Coordinated by faculty coordinator Ms. Nisha Roche and student coordinator Mr. Ruben Saldanha, the session concluded with an interactive discussion on industry applications of AI agents and career opportunities in the Salesforce ecosystem.\n"
   }
