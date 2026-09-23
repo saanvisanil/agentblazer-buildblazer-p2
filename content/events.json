@@ -71,7 +71,9 @@
     "speakerNote": "Session Leads: Prajwal Royston Cordiero & Chacko P Abraham",
     "images": [
       "/images/events/placeholder.svg"
-    ]
+    ],
+    "details": "Under the guidance of Ms. Nisha J. Roche, 6th-semester CSE students Prajwal Royston Corderio and Chacko P Abraham led a hands-on peer-learning workshop on Generative AI (mapped to PO4, PO6, PO7, PO11). The session detailed AI governance frameworks (LLM Council), transformer mechanisms, and prompt engineering, alongside comparisons of LLaMA, Groq, Mistral AI, ChatGPT, GitHub Copilot, and Perplexity. Students engaged in an AI quiz, a three-stage model evaluation challenge, and a feature-modification coding task before a valedictory session to end the program.",
+    "registrationOpen": false
   },
   {
     "slug": "cyber-security-career-pathways",
