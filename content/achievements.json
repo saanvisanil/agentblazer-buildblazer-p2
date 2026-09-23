@@ -1,32 +1,42 @@
 [
   {
-    "date": "2026-04-01",
-    "title": "Cyber Security & Career Pathways",
-    "body": "Interactive demonstrations covering Shodan discovery, OSINT methods, CVE vulnerability analysis, SQL injection scenarios, and the Cyber Kill Chain.",
-    "tag": "Workshop"
-  },
-  {
-    "date": "2026-03-25",
-    "title": "PROMPT OPS-2K26 Challenge",
-    "body": "Fast-paced prompt engineering hackathon featuring automated test suites, iterative refinement, teamwork, and live algorithmic problem solving.",
-    "tag": ""
-  },
-  {
-    "date": "2025-08-28",
-    "title": "Agentforce Technical Deep-Dive",
-    "body": "Guiding undergraduate engineers from prompt prediction to autonomous agentic architectures, Salesforce Data Cloud integration, and real-time enterprise workflows.",
-    "tag": "Session"
-  },
-  {
+    "id": "club-launch-2025",
+    "year": "2025",
     "date": "2025-08-25",
-    "title": "AgentBlazer Club inaugurated",
-    "body": "The club was launched at SJEC CSE with an Agentforce Symposium and industry mentorship.",
-    "tag": "Milestone"
+    "title": "AgentBlazer Club Inauguration",
+    "body": "Official launch of the student-led AI & Agentic Systems laboratory at SJEC CSE, featuring keynote address on Agentforce and cloud architecture.",
+    "tag": "Inauguration",
+    "image": "/images/events/1790096991812-d1a0bfc8-28a1-4cfd-94fc-4bdb869b9ede.jpg",
+    "link": "/about"
   },
   {
+    "id": "first-technical-workshop",
+    "year": "2026",
     "date": "2026-02-14",
-    "title": "GSoC & LLMs masterclass",
-    "body": "Students explored open-source contribution workflows and applied LLM development.",
-    "tag": "Workshop"
+    "title": "First Technical Workshop: Generative AI & Agents",
+    "body": "Hands-on student lab exploring open-source model benchmarking, RAG pipelines, and agent orchestration.",
+    "tag": "Workshop",
+    "image": "/images/events/placeholder.svg",
+    "link": "/events/demystifying-generative-models"
+  },
+  {
+    "id": "gsoc-llm-masterclass",
+    "year": "2026",
+    "date": "2026-10-06",
+    "title": "GSoC & LLMs Flagship Masterclass",
+    "body": "Premier masterclass with Google DeepMind alumni guiding students on open-source Git PR workflows, LlamaIndex, and Gradio deployments.",
+    "tag": "Masterclass",
+    "image": "/images/events/1790092457324-09f17729-c361-4681-99c2-9e4cb4edb5f1.jpg",
+    "link": "/events/master-the-future-gsoc-llms"
+  },
+  {
+    "id": "prompt-ops-challenge",
+    "year": "2026",
+    "date": "2026-11-25",
+    "title": "PROMPT OPS-2K26 Challenge",
+    "body": "Competitive prompt engineering hackathon featuring live test suites and automated evaluation.",
+    "tag": "Contest",
+    "image": "/images/events/placeholder.svg",
+    "link": "/events/prompt-ops-2k26"
   }
 ]

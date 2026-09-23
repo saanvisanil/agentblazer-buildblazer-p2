@@ -20,7 +20,7 @@ export default function GalleryCard({ event, formattedDate }) {
 
     const timer = setInterval(() => {
       setIndex((current) => (current + 1) % images.length);
-    }, 2000);
+    }, 2200);
 
     return () => clearInterval(timer);
   }, [active, images.length]);
@@ -39,12 +39,24 @@ export default function GalleryCard({ event, formattedDate }) {
       {/* Main event card */}
       <article
         tabIndex={0}
+        onClick={() => setActive((prev) => !prev)}
         className={`relative overflow-visible rounded-card border border-line bg-surface p-5 transition-all duration-300 ${
           active
             ? "z-40 border-accent shadow-[0_0_35px_rgba(139,92,246,0.18)]"
             : "z-10"
         }`}
       >
+        {/* Mobile inline preview image */}
+        <div className="relative mb-3 h-44 w-full overflow-hidden rounded-xl lg:hidden">
+          <Image
+            src={displayImageUrl(images[index])}
+            alt={event.title}
+            fill
+            sizes="(max-width: 1024px) 100vw, 300px"
+            className="object-cover"
+          />
+        </div>
+
         {/* Event category */}
         {event.tag && (
           <span className="inline-flex rounded-full bg-accent-soft px-2.5 py-1 text-xs text-accent">
@@ -68,15 +80,21 @@ export default function GalleryCard({ event, formattedDate }) {
             {event.summary}
           </p>
         )}
+
         <EventActions event={event} />
-        <Link href={`/events/${event.slug}`} className="mt-3 inline-block text-sm text-accent hover:underline">View event details →</Link>
+
+        <Link href={`/events/${event.slug}`} className="mt-3 inline-block text-sm text-accent hover:underline">
+          View event details &rarr;
+        </Link>
       </article>
 
-      {/* Floating event gallery */}
+      {/* Desktop floating event gallery */}
       {active && (
         <div
           className="
             pointer-events-none
+            hidden
+            lg:block
             absolute
             left-[calc(100%+18px)]
             top-1/2
@@ -99,7 +117,6 @@ export default function GalleryCard({ event, formattedDate }) {
           {/* Gradient border */}
           <div className="relative overflow-hidden rounded-[19px] bg-gradient-to-br from-violet-500 via-fuchsia-500/60 to-cyan-400 p-[1px]">
             <div className="relative overflow-hidden rounded-[18px] bg-[#090b18]">
-
               {/* Purple decorative glow */}
               <div className="pointer-events-none absolute -right-12 -top-12 h-32 w-32 rounded-full bg-violet-500/20 blur-3xl" />
 
@@ -139,7 +156,6 @@ export default function GalleryCard({ event, formattedDate }) {
 
               {/* Event information */}
               <div className="relative px-4 pb-4 pt-2">
-
                 {/* Gradient accent line */}
                 <div className="mb-2 h-[2px] w-12 rounded-full bg-gradient-to-r from-violet-500 to-cyan-400" />
 
@@ -156,12 +172,10 @@ export default function GalleryCard({ event, formattedDate }) {
                 {/* Club label */}
                 <div className="mt-3 flex items-center gap-2">
                   <span className="h-1.5 w-1.5 rounded-full bg-cyan-400 shadow-[0_0_10px_rgba(34,211,238,0.9)]" />
-
                   <span className="text-[10px] uppercase tracking-[0.18em] text-white/40">
                     AgentBlazer Events
                   </span>
                 </div>
-
               </div>
             </div>
           </div>

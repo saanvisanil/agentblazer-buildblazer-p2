@@ -8,6 +8,8 @@ const blank = () => ({
   name: "",
   role: "",
   tag: "",
+  order: 10,
+  archived: false,
   body: "",
   image: "/images/team/placeholder.svg",
 });
@@ -64,8 +66,6 @@ export default function TeamEditor() {
       );
       setData(nextData);
 
-      // The upload commits the image file itself; this second save commits
-      // the image path into team.json so it cannot disappear on refresh.
       const saved = await save(nextData);
       if (!saved) throw new Error("Photo uploaded, but the profile could not be saved. Try Save changes again.");
     } catch (err) {
@@ -76,18 +76,18 @@ export default function TeamEditor() {
   }
 
   const inputClass =
-    "mt-1 w-full rounded-card border border-line bg-bg px-3 py-2 text-sm";
+    "mt-1 w-full rounded-card border border-line bg-bg px-3 py-2 text-sm text-ink focus:border-accent focus:outline-none";
 
   return (
     <div>
       <div className="flex items-center justify-between">
-        <p className="text-sm text-muted">{data.length} people</p>
+        <p className="text-sm text-muted">{data.length} team members total</p>
 
         <button
           onClick={add}
-          className="rounded-card border border-line px-3 py-1.5 text-sm hover:bg-surface-2"
+          className="rounded-card border border-line px-3.5 py-1.5 text-xs font-semibold hover:bg-surface-2"
         >
-          + Add person
+          + Add Person
         </button>
       </div>
 
@@ -95,10 +95,10 @@ export default function TeamEditor() {
         {data.map((member, i) => (
           <div
             key={i}
-            className="rounded-card border border-line bg-surface p-4"
+            className={`rounded-card border border-line bg-surface p-4 ${member.archived ? "opacity-60" : ""}`}
           >
-            <div className="grid gap-3 sm:grid-cols-2">
-              <label className="text-xs text-muted">
+            <div className="grid gap-3 sm:grid-cols-3">
+              <label className="text-xs font-medium text-muted">
                 Section
                 <select
                   className={inputClass}
@@ -115,7 +115,7 @@ export default function TeamEditor() {
                 </select>
               </label>
 
-              <label className="text-xs text-muted">
+              <label className="text-xs font-medium text-muted">
                 Name
                 <input
                   className={inputClass}
@@ -126,8 +126,20 @@ export default function TeamEditor() {
                 />
               </label>
 
-              <label className="text-xs text-muted">
-                Role
+              <label className="text-xs font-medium text-muted">
+                Display Priority / Order (e.g. 1 for President)
+                <input
+                  type="number"
+                  className={inputClass}
+                  value={member.order || 10}
+                  onChange={(e) =>
+                    update(i, "order", parseInt(e.target.value, 10) || 10)
+                  }
+                />
+              </label>
+
+              <label className="text-xs font-medium text-muted">
+                Role / Title
                 <input
                   className={inputClass}
                   value={member.role || ""}
@@ -137,8 +149,8 @@ export default function TeamEditor() {
                 />
               </label>
 
-              <label className="text-xs text-muted">
-                Tag / badge
+              <label className="text-xs font-medium text-muted">
+                Tag / Badge
                 <input
                   className={inputClass}
                   value={member.tag || ""}
@@ -147,10 +159,21 @@ export default function TeamEditor() {
                   }
                 />
               </label>
+
+              <label className="flex items-center gap-2 self-end pb-2 text-xs font-medium text-muted">
+                <input
+                  type="checkbox"
+                  checked={member.archived === true}
+                  onChange={(e) =>
+                    update(i, "archived", e.target.checked)
+                  }
+                />
+                Archive Member (keep in record without displaying on site)
+              </label>
             </div>
 
-            <label className="mt-3 block text-xs text-muted">
-              Short description (officers only)
+            <label className="mt-3 block text-xs font-medium text-muted">
+              Short Description / Bio
               <textarea
                 className={inputClass}
                 rows={2}
@@ -162,13 +185,13 @@ export default function TeamEditor() {
             </label>
 
             <div className="mt-4">
-              <p className="text-xs text-muted">Profile photo</p>
+              <p className="text-xs font-medium text-muted">Profile Photo</p>
 
               <div className="mt-2 flex flex-wrap items-center gap-3">
                 <input
                   type="file"
                   accept="image/jpeg,image/png,image/webp"
-                  className="text-xs"
+                  className="text-xs text-muted"
                   onChange={(e) =>
                     uploadPhoto(i, e.target.files?.[0])
                   }
@@ -176,7 +199,7 @@ export default function TeamEditor() {
 
                 {uploading === i ? (
                   <span className="text-xs text-muted">
-                    Uploading…
+                    Uploading photo…
                   </span>
                 ) : null}
               </div>
@@ -188,12 +211,20 @@ export default function TeamEditor() {
               ) : null}
             </div>
 
-            <button
-              onClick={() => remove(i)}
-              className="mt-3 text-xs text-accent hover:underline"
-            >
-              Remove this person
-            </button>
+            <div className="mt-4 border-t border-line pt-3 flex items-center justify-between">
+              <button
+                onClick={() => remove(i)}
+                className="text-xs text-accent hover:underline"
+              >
+                Delete Record
+              </button>
+
+              {member.archived ? (
+                <span className="rounded-full bg-amber-500/20 px-2.5 py-0.5 text-[10px] text-amber-400">
+                  ARCHIVED
+                </span>
+              ) : null}
+            </div>
           </div>
         ))}
       </div>
@@ -208,15 +239,15 @@ export default function TeamEditor() {
         <button
           onClick={() => save(data)}
           disabled={status === "saving"}
-          className="rounded-card px-4 py-2 text-sm font-medium text-accent-ink"
+          className="rounded-card px-5 py-2.5 text-sm font-semibold text-accent-ink disabled:opacity-60"
           style={{ background: "var(--gradient)" }}
         >
-          {status === "saving" ? "Saving…" : "Save changes"}
+          {status === "saving" ? "Saving…" : "Save Team Changes"}
         </button>
 
         {status === "saved" ? (
           <span className="text-sm text-accent">
-            Saved — site will update shortly.
+            Saved successfully.
           </span>
         ) : null}
 

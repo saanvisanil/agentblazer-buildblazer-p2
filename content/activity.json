@@ -1,0 +1,16 @@
+[
+  {
+    "id": "act-1790099800",
+    "user": "leader",
+    "action": "Updated event status",
+    "target": "PROMPT OPS-2K26 Challenge",
+    "timestamp": "2026-09-23T19:42:00.000Z"
+  },
+  {
+    "id": "act-1790099500",
+    "user": "leader",
+    "action": "Published announcement",
+    "target": "PROMPT OPS-2K26 Registration Open",
+    "timestamp": "2026-09-23T18:15:00.000Z"
+  }
+]

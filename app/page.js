@@ -1,17 +1,21 @@
 import Image from "next/image";
 import Button from "@/components/Button";
 import StatCard from "@/components/StatCard";
-import { getSite } from "@/lib/content";
+import { getSite, getLiveAnnouncements } from "@/lib/content";
 import IntroSequence from "@/components/IntroSequence";
 import AnnouncementFeed from "@/components/AnnouncementFeed";
+import AnnouncementBar from "@/components/AnnouncementBar";
 
 export const dynamic = "force-dynamic";
 
-export default function HomePage() {
+export default async function HomePage() {
   const site = getSite();
+  const announcements = await getLiveAnnouncements();
 
   return (
-    <section className="starfield relative min-h-[calc(100vh-80px)] overflow-x-clip">
+    <>
+      <AnnouncementBar announcements={announcements} />
+      <section className="starfield relative min-h-[calc(100vh-80px)] overflow-x-clip">
       <IntroSequence />
       {/* Background glow */}
       <div className="pointer-events-none absolute left-1/2 top-1/2 h-[700px] w-[700px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-violet-600/10 blur-[120px]" />
@@ -168,5 +172,6 @@ export default function HomePage() {
       </div>
       <AnnouncementFeed />
     </section>
+    </>
   );
 }
