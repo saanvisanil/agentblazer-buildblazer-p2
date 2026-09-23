@@ -33,7 +33,18 @@
     "footLeft": "Hover to inspect gallery",
     "footRight": "10 Contest Photos",
     "images": [
-      "/images/events/placeholder.svg"
+      "/images/events/placeholder.svg",
+      "/images/events/1790177187500-06743b5f-95f5-4149-a2b0-f0b07481a6e9.jpg",
+      "/images/events/1790177192260-4fb3fc83-8ac0-453e-b82c-625eb1e33153.jpg",
+      "/images/events/1790177197191-be9a15e9-0c07-4c5a-a49b-89720356dd74.jpg",
+      "/images/events/1790177202290-51938e7e-41ec-4a05-bc7c-65dab7334a03.jpg",
+      "/images/events/1790177208480-9666b1a9-9de7-4745-aee4-1f52beb5853f.jpg",
+      "/images/events/1790177212996-8f0cc40e-a6b2-41e6-be46-711a5ad1f902.jpg",
+      "/images/events/1790177216889-d14cc3e2-dded-4c07-844b-05f72061e2e0.jpg",
+      "/images/events/1790177221108-a287f55e-bd1f-4121-9455-ecae291342f8.jpg",
+      "/images/events/1790177225479-d67369c4-3e9f-47fd-bc4f-b31bbe8c951d.jpg",
+      "/images/events/1790177229797-83e177d5-1e6b-4315-8045-e3cedaa18ea2.jpg",
+      "/images/events/1790177233675-8dc30eb2-ece8-45c2-b5d8-cc6d984d1971.jpg"
     ],
     "registrationOpen": false
   },
