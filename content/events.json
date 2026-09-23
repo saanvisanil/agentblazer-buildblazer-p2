@@ -91,7 +91,8 @@
       "/images/events/1790177502783-c2641712-38ac-42e3-a4a8-2008a3630a01.jpg",
       "/images/events/1790177506226-d6aa6915-296b-486a-8876-5a1d179cf59b.jpg"
     ],
-    "registrationOpen": false
+    "registrationOpen": false,
+    "details": "Organized by the Department of CSE in association with the AgentBlazer Club, this hands-on workshop was delivered by Mr. Suhas Nayak (Tech Lead – SecOps, Ingersoll Rand) for 6th-semester students (mapped to PO6, PO7, PO9, PO11). The session provided practical exposure to core security concepts, live tool demonstrations including Shodan, OSINT techniques, Google Dorking, CVE management, SQL Injection, and the Cyber Kill Chain model. It concluded with actionable guidance on career roles such as Security Analyst, SOC Analyst, Ethical Hacker, and Cloud Security Engineer."
   },
   {
     "slug": "hands-on-agentforce-ai-agents",
