@@ -1,6 +1,6 @@
 import Eyebrow from "@/components/Eyebrow";
 import GalleryCard from "@/components/GalleryCard";
-import { getSite, getLiveEvents, formatDate } from "@/lib/content";
+import { getLiveSite, getLiveEvents, formatDate } from "@/lib/content";
 
 export const metadata = {
   title: "Events & Workshops",
@@ -10,7 +10,7 @@ export const metadata = {
 export const dynamic = "force-dynamic";
 
 export default async function EventsPage() {
-  const site = getSite();
+  const site = await getLiveSite();
   const config = site.events;
   const events = await getLiveEvents();
 

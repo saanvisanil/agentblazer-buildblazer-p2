@@ -3,7 +3,7 @@ import { Inter } from "next/font/google";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 import ThemeScript from "@/components/ThemeScript";
-import { getSite } from "@/lib/content";
+import { getSite, getLiveSite } from "@/lib/content";
 import CustomCursor from "@/components/CustomCursor";
 import ClubChatbot from "@/components/ClubChatbot";
 
@@ -37,7 +37,10 @@ export const metadata = {
   },
 };
 
-export default function RootLayout({ children }) {
+export const dynamic = "force-dynamic";
+
+export default async function RootLayout({ children }) {
+  const liveSite = await getLiveSite();
   return (
     <html lang="en" suppressHydrationWarning className={inter.variable}>
       <head>
@@ -53,13 +56,13 @@ export default function RootLayout({ children }) {
           Skip to content
         </a>
 
-        <Nav site={site} />
+        <Nav site={liveSite} />
 
         <main id="main" className="flex-1">
           {children}
         </main>
 
-        <Footer site={site} />
+        <Footer site={liveSite} />
       </body>
     </html>
   );

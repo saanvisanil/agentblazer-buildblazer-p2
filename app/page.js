@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Button from "@/components/Button";
 import StatCard from "@/components/StatCard";
-import { getSite, getLiveAnnouncements } from "@/lib/content";
+import { getLiveSite, getLiveAnnouncements } from "@/lib/content";
 import IntroSequence from "@/components/IntroSequence";
 import AnnouncementFeed from "@/components/AnnouncementFeed";
 import AnnouncementBar from "@/components/AnnouncementBar";
@@ -9,7 +9,7 @@ import AnnouncementBar from "@/components/AnnouncementBar";
 export const dynamic = "force-dynamic";
 
 export default async function HomePage() {
-  const site = getSite();
+  const site = await getLiveSite();
   const announcements = await getLiveAnnouncements();
 
   return (

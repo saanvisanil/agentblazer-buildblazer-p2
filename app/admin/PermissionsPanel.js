@@ -77,6 +77,21 @@ export default function PermissionsPanel() {
     else await loadUsers();
   }
 
+  async function removeUser(username) {
+    if (!confirm(`Permanently remove the account "${username}"? This cannot be undone.`)) return;
+    const res = await fetch("/api/admin/users", {
+      method: "DELETE",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ username }),
+    });
+    const body = await res.json().catch(() => ({}));
+    if (!res.ok) {
+      setError(body.error || "Could not remove this account.");
+      return;
+    }
+    await loadUsers();
+  }
+
   function togglePermission(list, permission) {
     return list.includes(permission) ? list.filter((item) => item !== permission) : [...list, permission];
   }
@@ -160,6 +175,15 @@ export default function PermissionsPanel() {
                     >
                       {user.enabled ? "Disable" : "Enable"}
                     </button>
+                    {user.role !== "leader" ? (
+                      <button
+                        type="button"
+                        onClick={() => removeUser(user.username)}
+                        className="rounded-card border border-red-500/40 bg-red-950/20 px-2.5 py-1.5 text-xs text-red-400 hover:bg-red-900/30"
+                      >
+                        ✕ Remove
+                      </button>
+                    ) : null}
                   </div>
                   {user.role !== "leader" ? <fieldset className="mt-3 grid gap-1 border-t border-line pt-3"><legend className="text-xs text-muted">Edit access</legend>{PERMISSIONS.map(([permission, label]) => <label key={permission} className="flex items-center gap-2 text-xs"><input type="checkbox" checked={(user.permissions || []).includes(permission)} onChange={() => savePermissions(user.username, togglePermission(user.permissions || [], permission))} />{label}</label>)}</fieldset> : null}
                 </div>

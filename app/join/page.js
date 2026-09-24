@@ -2,15 +2,17 @@ import Image from "next/image";
 import Eyebrow from "@/components/Eyebrow";
 import Button from "@/components/Button";
 import JoinForm from "@/components/JoinForm";
-import { getSite } from "@/lib/content";
+import { getLiveSite } from "@/lib/content";
 
 export const metadata = {
   title: "Join & Connect",
   description: "Apply to join the AgentBlazer Club or reach the CSE department directly.",
 };
 
-export default function JoinPage() {
-  const site = getSite();
+export const dynamic = "force-dynamic";
+
+export default async function JoinPage() {
+  const site = await getLiveSite();
   const join = site.join;
 
   return (

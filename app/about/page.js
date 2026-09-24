@@ -1,6 +1,6 @@
 import Eyebrow from "@/components/Eyebrow";
 import TeamCard from "@/components/TeamCard";
-import { getSite, getLiveTeam } from "@/lib/content";
+import { getLiveSite, getLiveTeam } from "@/lib/content";
 export const metadata = {
   title: "About Us",
   description: "How the AgentBlazer Club started, its leadership, and its student core team.",
@@ -8,7 +8,7 @@ export const metadata = {
 export const dynamic = "force-dynamic";
 
 export default async function AboutPage() {
-  const site = getSite();
+  const site = await getLiveSite();
   const about = site.about;
   const team = await getLiveTeam();
   const guests = team.filter((member) => member.group === "guest");
