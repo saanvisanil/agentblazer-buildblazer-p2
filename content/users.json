@@ -30,5 +30,17 @@
     "enabled": true,
     "passwordHash": "874239829cbe0ff11941c909497943e0:01ac60e090659049361dd4cbb47dca56a60f33540c8a404cf1ab4e3a4eca3adbb6d86d418e7ae44a79aeca91ddc8b655cf30158b4b4cc8a06de19b2a6652b22b",
     "createdAt": "2026-09-24T07:42:13.257Z"
+  },
+  {
+    "username": "leader2",
+    "role": "custom",
+    "permissions": [
+      "site",
+      "team",
+      "events"
+    ],
+    "enabled": true,
+    "passwordHash": "2acdf10d1242588fb23f32cd832f480c:1e6ccc36d32a147e0a14b76d87c9a7f6d88ab228e2a880386ca66f1dd7bc566e0a7d6bd35114fc0a12710c91d635e759179cb692b4cf9ecf90162142b6cab1bf",
+    "createdAt": "2026-09-24T08:25:10.983Z"
   }
 ]
