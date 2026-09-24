@@ -1,14 +1,5 @@
 [
   {
-    "username": "eventeditor123",
-    "role": "event_editor",
-    "enabled": false,
-    "passwordHash": "0f34d36b9ca0998ee338d49b8cf4966b:7513e087f2db884aa24fe5c29e30cbb2e58ae96a5210b71d85655f673067e55f57b28c722bfe815e33e5c5c86921d5d593980b2404453741370fb363a12c2f4d",
-    "createdAt": "2026-09-21T18:09:28.766Z",
-    "updatedAt": "2026-09-24T02:11:05.467Z",
-    "permissions": []
-  },
-  {
     "username": "contenteditor",
     "role": "content_editor",
     "enabled": false,
