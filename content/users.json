@@ -15,9 +15,10 @@
       "announcements",
       "applications"
     ],
-    "enabled": true,
+    "enabled": false,
     "passwordHash": "85d14756027cef1b1e7d63c2aa8453a2:763144b5da630ce7aff5d172ffc2bf4c4dece441dbfc3b0d954ea95b27165bba54ae675ada9bdfba50341b71f396bb06c7ecf84a06084e466ef761d2e4da40f3",
-    "createdAt": "2026-09-23T17:26:13.802Z"
+    "createdAt": "2026-09-23T17:26:13.802Z",
+    "updatedAt": "2026-09-24T07:42:21.467Z"
   },
   {
     "username": "editor",
