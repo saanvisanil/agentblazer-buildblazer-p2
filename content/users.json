@@ -18,5 +18,16 @@
     "enabled": true,
     "passwordHash": "85d14756027cef1b1e7d63c2aa8453a2:763144b5da630ce7aff5d172ffc2bf4c4dece441dbfc3b0d954ea95b27165bba54ae675ada9bdfba50341b71f396bb06c7ecf84a06084e466ef761d2e4da40f3",
     "createdAt": "2026-09-23T17:26:13.802Z"
+  },
+  {
+    "username": "editor",
+    "role": "custom",
+    "permissions": [
+      "events",
+      "site"
+    ],
+    "enabled": true,
+    "passwordHash": "874239829cbe0ff11941c909497943e0:01ac60e090659049361dd4cbb47dca56a60f33540c8a404cf1ab4e3a4eca3adbb6d86d418e7ae44a79aeca91ddc8b655cf30158b4b4cc8a06de19b2a6652b22b",
+    "createdAt": "2026-09-24T07:42:13.257Z"
   }
 ]
