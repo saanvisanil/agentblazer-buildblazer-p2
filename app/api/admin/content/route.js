@@ -34,7 +34,8 @@ export async function GET(request) {
     return NextResponse.json({ error: "You do not have permission to manage this section." }, { status: 403 });
   }
   try {
-    const { data, sha } = await readJsonFile(path);
+    // Admin editors always need the freshest sha to avoid 409 conflicts on save
+    const { data, sha } = await readJsonFile(path, { skipCache: true });
     return NextResponse.json({ data, sha });
   } catch (err) {
     // A new content file may not exist in the configured GitHub repository

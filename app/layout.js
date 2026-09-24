@@ -4,8 +4,7 @@ import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 import ThemeScript from "@/components/ThemeScript";
 import { getSite, getLiveSite } from "@/lib/content";
-import CustomCursor from "@/components/CustomCursor";
-import ClubChatbot from "@/components/ClubChatbot";
+import ClientShell from "@/components/ClientShell";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -37,7 +36,7 @@ export const metadata = {
   },
 };
 
-export const dynamic = "force-dynamic";
+export const revalidate = 60; // seconds — ISR revalidation matches the github.js cache TTL
 
 export default async function RootLayout({ children }) {
   const liveSite = await getLiveSite();
@@ -47,8 +46,7 @@ export default async function RootLayout({ children }) {
         <ThemeScript />
       </head>
       <body className="flex min-h-screen flex-col">
-        <CustomCursor />
-        <ClubChatbot />
+        <ClientShell />
         <a
           href="#main"
           className="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-50 focus:rounded focus:bg-accent focus:px-4 focus:py-2 focus:text-accent-ink"
